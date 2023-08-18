@@ -1,0 +1,66 @@
+[
+  {
+    "name": "로그인",
+    "type": "group",
+    "children": [
+      {
+        "name": "로그인 페이지 step-01 : 이메일 입력",
+        "type": "describe",
+        "children": [
+          {
+            "name": "이메일 input",
+            "type": "describe",
+            "children": [
+              {
+                "name": "이메일이 입력되지 않으면",
+                "type": "context",
+                "children": [
+                  {
+                    "name": "검증에 통과하지 못한다.",
+                    "type": "it"
+                  }
+                ]
+              },
+              {
+                "name": "이메일 형태가 올바르지 않으면",
+                "type": "context",
+                "children": [
+                  {
+                    "name": "검증에 통과하지 못한다.",
+                    "type": "it"
+                  }
+                ]
+              },
+              {
+                "name": "이메일이 올바르면",
+                "type": "context",
+                "children": [
+                  {
+                    "name": "검증에 통과한다.",
+                    "type": "it"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "계속 버튼",
+            "type": "describe"
+          },
+          {
+            "name": "회원 가입 버튼",
+            "type": "describe"
+          }
+        ]
+      },
+      {
+        "name": "로그인 페이지 step-02 : 비밀번호 입력",
+        "type": "describe"
+      }
+    ]
+  },
+  {
+    "name": "회원가입",
+    "type": "group"
+  }
+]
