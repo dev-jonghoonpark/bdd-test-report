@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { STATUS } from "../enum/STATUS";
+import { STATUS } from "@/enum/STATUS";
 
 const IconContainer = styled.div`
   display: flex;

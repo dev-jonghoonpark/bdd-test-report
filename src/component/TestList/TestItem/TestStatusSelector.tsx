@@ -1,7 +1,7 @@
 import React from "react";
-import { STATUS } from "../enum/STATUS";
-import { TYPE } from "../enum/TYPE";
-import { statusToEnum } from "../util/enum-converter";
+import { STATUS } from "@/enum/STATUS";
+import { TYPE } from "@/enum/TYPE";
+import { statusToEnum } from "@/util/enum-converter";
 
 function TestStatusSelector({
   type,

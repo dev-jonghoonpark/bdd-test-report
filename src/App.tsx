@@ -1,22 +1,17 @@
 import styled from "styled-components";
 import tests from "./tests.json";
-import TestItem from "./component/TestItem";
-import Test from "./type/Test";
+import Test from "@/type/Test";
+import TestList from "./component/TestList/TestList";
 
 const AppContainer = styled.div`
-  padding: 1rem;
+  height: 100%;
 `;
 
 function App() {
+  let root = Test.plainToClass(tests);
   return (
     <AppContainer>
-      {tests.map((test: any, index: number) => (
-        <TestItem
-          key={`0-${index}`}
-          test={Test.plainToClass(test)}
-          level={0}
-        ></TestItem>
-      ))}
+      <TestList root={root} />
     </AppContainer>
   );
 }

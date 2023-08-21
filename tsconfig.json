@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -14,8 +15,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["src"],
-  "types": ["node", "jest", "@testing-library/jest-dom"]
+  "include": ["src", "vite.config.ts"],
+  "types": ["node", "jest", "@testing-library/jest-dom"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

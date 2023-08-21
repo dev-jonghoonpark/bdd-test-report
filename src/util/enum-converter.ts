@@ -3,6 +3,7 @@ import { TYPE } from "../enum/TYPE";
 
 function typeToEnum(type: string): TYPE {
   switch (type) {
+    case "root":
     case "group":
       return TYPE.GROUP;
     case "describe":

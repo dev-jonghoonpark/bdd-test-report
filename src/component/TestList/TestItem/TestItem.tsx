@@ -1,12 +1,12 @@
 import React, { useCallback, useEffect, useState } from "react";
 
 import styled from "styled-components";
-import Test from "../type/Test";
+import Test from "@/type/Test";
 import TestStatusIcon from "./TestStatusIcon";
 import TestName from "./TestName";
 import TestStatusSelector from "./TestStatusSelector";
-import { TYPE } from "../enum/TYPE";
-import { STATUS } from "../enum/STATUS";
+import { TYPE } from "@/enum/TYPE";
+import { STATUS } from "@/enum/STATUS";
 
 const ItemContainer = styled.div<{ $isRoot: boolean }>`
   ${(props) => !props.$isRoot && "padding-left: 2rem;"}
